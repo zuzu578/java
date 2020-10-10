@@ -1,0 +1,386 @@
+import java.util.Scanner;
+
+
+
+public class Newnewnewne2 {
+
+	public static void main(String[] args) {
+	 int myCharacter = 10;
+	 int enemy = 7;
+			 
+		
+		System.out.println("앗! 야생의"+"파이리(이) 나왔다.!"+"체력(50)"+"레벨"+enemy);
+		System.out.println("가랏! 꼬부기!"+"체력(60)"+"레벨"+myCharacter);
+		System.out.println("꼬부기는 무엇을 할까?");
+		System.out.println("1.공격"+"2.도구"+"3.도망간다");
+	   Scanner sc = new Scanner(System.in);
+	   
+	   int answer = sc.nextInt();
+	   
+	   if(answer == 1) {
+		   
+		   System.out.println("어떤 기술을 쓸까?");
+		   System.out.println("1.핥퀴기"+"2.울음소리"+"3물대포"+"4번풀베기");
+		   int answer1 = sc.nextInt();
+		  if(answer1 == 1) {
+			  //꼬부기 선빵//
+			  System.out.println("꼬부기의 핥귀기!");
+			  System.out.println("파이리의 체력이 40이 되었다!.");
+			  System.out.println("효과가 별로인듯하다..");
+			  //파이리후빵//
+			  System.out.println("파이리의 울음소리! ");
+			  System.out.println("꼬부기의 공격력이 낮아졌다!.");
+			  
+		  } if(answer1 == 2) {
+			  //꼬부기 선빵//
+			    System.out.println("꼬부기의 울음소리 !");
+			    System.out.println("파이리의 공격력이 낮아졌다!");
+			    //파이리후빵//
+			    System.out.println("파이리의 불꽃세례!");
+			    System.out.println("꼬부기의 체력이 65가 되었다!.");
+			    System.out.println("효과는 별로인듯하다...");
+			 
+		 
+		  }if(answer1 == 3) {
+			  //꼬부기 선빵//
+			  System.out.println("꼬부기의 핥귀기!");
+			  System.out.println("파이리의 체력이 20이  되었다!.");
+			  System.out.println("효과는 굉장했다!!");
+			  //파이리후빵//
+			  System.out.println("파이리의 핥퀴기 !");
+			    System.out.println("꼬부기의 체력이 60이  되었다!.");
+			    System.out.println("효과는 별로인듯하다...");
+			  
+		  }if(answer1 ==4) {
+			//꼬부기 선빵//
+			  System.out.println("꼬부기의 풀베기!");
+				 System.out.println("파이리의 체력이 46이 되었다!.");
+				 System.out.println("효과가 별로인듯하다..");
+				//파이리후빵//
+				 System.out.println("파이리의 메가펀치 !");
+				    System.out.println("꼬부기의 체력이 55가 되었다!.");
+				    System.out.println("효과는 별로인듯하다...");
+		  }
+		
+			
+				  
+			
+						  
+		  }else if(answer==2) {
+			  System.out.println("어떤 도구를 선택할까??");
+			  System.out.println("1.체력회복약"+"2.몬스터볼 "+"3.기술머신.");
+			 int a2 = sc.nextInt();
+			 
+			if(a2 ==1) {
+				System.out.println("꼬부기의 체력을 회복했다 . ");
+			}
+				
+			
+				if(a2 ==2) {
+					
+				
+					System.out.println(" 어떤 몬스터볼을 쓸까? ");
+					System.out.println("1.마스터볼 2.몬스터볼 3.네트볼 4. 퀵볼 ");
+				   int a3 = sc.nextInt();
+				   if(a3 ==1) {
+					   System.out.println("꼬부기(는) 마스터볼을 사용했다!.");
+					   System.out.println("신난다! 파이리를 잡았다!");
+					   System.out.println("파이리 가 새로운 도감에 등록됩니다!.");
+				   }if(a3 == 2) {
+					   System.out.println("꼬부기(는) 몬스볼을 사용했다!.");
+					   System.out.println("아..아깝다 조금만더하면 됐을텐데..!");
+				   } if(a3 == 3) {
+						 System.out.println("꼬부기(는) 네트 볼을 사용했다!.");
+						   System.out.println("신난다! 파이리를 잡았다!");
+						   System.out.println("파이리 가 새로운 도감에 등록됩니다!.");
+					
+				   }  if(a3 == 4) {
+							 System.out.println("꼬부기(는) 퀵 볼을 사용했다!.");
+							   System.out.println("신난다! 파이리를 잡았다!");
+							   System.out.println("파이리 가 새로운 도감에 등록됩니다!.");
+					   
+				   } 
+				   
+				}
+				 if(a2==3) { 
+				   System.out.println("어떤 기술머신을 선택할까..?");
+				   System.out.println("1.기술머신 34");
+				   System.out.println("2.기술머신 36");
+				   System.out.println("3.기술머신 32");
+				   System.out.println("4.기술머신 30");
+				   int answer4 = sc.nextInt();
+				    if(answer4 == 1) {
+				    	System.out.println("1. 기술머신 34. 를 배우시겠습니까??");
+				    	System.out.println("1.Yes"+"2.No");
+				      int answer5 = sc.nextInt();
+				      if(answer5 ==1) {
+				    	 System.out.println("꼬부기는 현재 4개의 기술을 알고있다.");
+				    	 System.out.println("그러나 그중하나를 잊어버려야한다.");
+				    	 System.out.println("어떤 기술을 잊게할까??");
+				    	 System.out.println("1.핥퀴기"+"2.울음소리"+"3물대포"+"4번풀베기"+"5번기술배우는것을 포기한다.");
+				    	 int answer6 = sc.nextInt();
+				    	if(answer6 == 1) {
+				    		System.out.println("핥퀴기를 잊게할까? Yes.1 no.2");
+				    		int answer7 = sc.nextInt();
+				    		if(answer7 ==1) {
+				    			System.out.println("...1..2..3..! 꼬부기는 핥퀴기를 완벽하게 잊어버렸다. ");
+				    			System.out.println("그리고 기술머신 34 바위치기를 배웠다!.");
+				    		}
+				    	    if(answer7==2) {
+				    	    	System.out.println("그럼..기술머신 34를 배우는것을 포기할까?1.yes 2. no");
+				    	    	int answer8 = sc.nextInt();
+				    	    	if(answer8 == 1) {
+				    	    		System.out.println("꼬부기는기술머신 34를 배우는것을 포기했다.!");
+				    	    	}else {
+				    	    		System.out.println("그럼 어떤 기술을 잊을까..?");
+				    	    	}
+				    	    	
+				    	    }
+				    	} else if(answer6 ==2) {
+				    		System.out.println("울음소리를 잊게할까? 1.yes 2.no");
+				    	      int answer9 = sc.nextInt();
+				    	      if(answer9 ==1) {
+				    	    	  System.out.println("...1..2..3..! 꼬부기는 울음소리를 완벽하게 잊어버렸다. ");
+				    	    	  System.out.println("그리고 기술머신 34 바위치기를 배웠다.!!");
+				    	      }else {
+				    	    	  System.out.println("꼬부기는 기술머신 배우는것을 포기햇다..!");
+				    	      }
+				    	}else if(answer6 ==3) {
+				    		System.out.println("물대포 를 잊게할까? 1.yes 2.no");
+				    	      int answer9 = sc.nextInt();
+				    	      if(answer9 ==1) {
+				    	    	  System.out.println("...1..2..3..! 꼬부기는 물대포 를 완벽하게 잊어버렸다. ");
+				    	    	  System.out.println("그리고 기술머신 34 바위치기를 배웠다.!!");
+				    	      }else {
+				    	    	  System.out.println("꼬부기는 기술머신 배우는것을 포기햇다..!");
+				    	      }
+				    		
+				    	}else if(answer6 ==4) {
+				    		System.out.println("풀베기  를 잊게할까? 1.yes 2.no");
+				    	      int answer9 = sc.nextInt();
+				    	      if(answer9 ==1) {
+				    	    	  System.out.println("...1..2..3..! 꼬부기는 풀베기 를 완벽하게 잊어버렸다. ");
+				    	    	  System.out.println("그리고 기술머신 34 바위치기를 배웠다.!!");
+				    	      }else {
+				    	    	  System.out.println("꼬부기는 기술머신 배우는것을 포기햇다..!");
+				    	      }
+				    		
+				    		
+				    	
+				    	}else if(answer6==5) {
+				    		System.out.println("꼬부기는 기술머신을 배우느것을 포기했다.");
+				    	}
+				    	
+				      }else {
+				    	  System.out.println("꼬부기는기술머신을 배우는것을 포기했다.");
+				      }
+				    	
+				    }if(answer4==2) {
+				     System.out.println("기술머신 36을 배우시겠습니까? 1. yes 2.no");
+				    int  answer5 = sc.nextInt();
+				     if(answer5 ==1) {
+				    	 System.out.println("꼬부기는 현재 4개의 기술을 알고있다.");
+				    	 System.out.println("그러나 그중하나를 잊어야한다. 어떤 기술을 잊게할까 ?");
+				    	 System.out.println("1.할퀴기 2.울음소리 3.물대포 4. 풀베기 5. 포기한다.");
+				    	 int answer6 = sc.nextInt();
+				    	 
+				    	 if(answer6==1) {
+				    		 System.out.println("할퀴기를 잊을까?1.yes 2. no");
+				    		int answer8 =sc.nextInt();
+				    		if(answer8==1) {
+				    			System.out.println("1...2..3..!.. 꼬부기는 할퀴기를 완전히 잊었다.");
+				    			System.out.println("그리고 꼬부기는 기술머신 36 파도타기를 배웠다!!");
+				    		}else {
+				    			System.out.println("꼬부기는 기술머신 배우는것을 포기했다.");
+				    		}
+				    		 
+				    	 }else if(answer6==2) {
+				    		 System.out.println("울음소리를 잊게할까?1.yes 2. no");
+				    		 int answer8=sc.nextInt();
+				    		 if(answer8==1) {
+				    			 System.out.println("1....2..3..! 꼬부기는 할퀴기를 완전히 잊었다.");
+				    			 System.out.println("꼬부기는 기술머신 36파도타기를 배웠다.!!");
+				    		 }else {
+				    			 System.out.println("꼬부기는 기술머신 배우는것을 포기했다.");
+				    			 
+				    		 }
+				    		 
+				    	 }else if(answer6==3) {
+				    		 System.out.println("물대포를 잊게할까?1.yes 2. no");
+				    		 int answer8=sc.nextInt();
+				    		 if(answer8==1) {
+				    			 System.out.println("1....2..3..! 꼬부기는 물대포를 완전히 잊었다.");
+				    			 System.out.println("꼬부기는 기술머신 36파도타기를 배웠다.!!");
+				    		 }else {
+				    			 System.out.println("꼬부기는 기술머신 배우는것을 포기했다.");
+				    			 
+				    		 }
+				    	 }else if(answer6==4) {
+				    		 System.out.println("풀베기를 잊게할까?1.yes 2. no");
+				    		 int answer8=sc.nextInt();
+				    		 if(answer8==1) {
+				    			 System.out.println("1....2..3..! 꼬부기는 풀베기를 완전히 잊었다.");
+				    			 System.out.println("꼬부기는 기술머신 36파도타기를 배웠다.!!");
+				    		 }else {
+				    			 System.out.println("꼬부기는 기술머신 배우는것을 포기했다.");
+				    			 
+				    		 }
+				    	 }else if(answer6==5) {
+				    		 System.out.println("꼬부기는 기술머신 배우는것을 포기했다.");
+				    	 }
+				    		 
+				    		 
+				    	 
+				    	 
+				     }else {
+				    	 System.out.println("꼬부기는 기술머신배우는것을 포기했다.");
+				    	 
+				     }
+				    }if(answer4 ==3) {
+				    	System.out.println("꼬부기는 현재 4개의 기술을 알고있다.");
+				    	System.out.println("그러나 그중 하나를 잊어야한다. 어떤기술잊게 할까?");
+				    	System.out.println("1.할퀴기 2.울음소리 3. 물대포 4. 풀베기 5. 배우는것을 포기한다.");
+				    	int answer5 = sc.nextInt();
+				    if(answer5 ==1) {
+				    	System.out.println("할퀴기를 잊게할까?1.Yes 2. no ");
+				    	int answer6 =sc.nextInt();
+				    	if(answer6 ==1) {
+				    		System.out.println("...1.2...3..!꼬부기는 할퀴기를 완전히 잊었다!");
+				    		System.out.println("그리고 기술머신 32 참기를 배웠다!");
+				    	}else {
+				    		System.out.println("꼬부기는기술머신 배우는것을 포기했다.");
+				    	}
+				    	
+				    		
+				    		
+				    	
+				    }else if(answer5 ==2) {
+				    	System.out.println("울음소리 를 잊게할까?1.Yes 2. no ");
+				    	int answer6 =sc.nextInt();
+				    	if(answer6 ==1) {
+				    		System.out.println("...1.2...3..!꼬부기는 울음소리를 완전히 잊었다!");
+				    		System.out.println("그리고 기술머신 32 참기를 배웠다!");
+				    	}else {
+				    		System.out.println("꼬부기는 기술머신 배우는것을 포기했다.");
+				    	
+				    	}
+				    	
+				    		
+				    		
+				    	
+				    }else if(answer5 ==3) {
+				    	System.out.println("물대포 를 잊게할까?1.Yes 2. no ");
+				    	int answer6 =sc.nextInt();
+				    	if(answer6 ==1) {
+				    		System.out.println("...1.2...3..!꼬부기는 물대포 를 완전히 잊었다!");
+				    		System.out.println("그리고 기술머신 32 참기를 배웠다!");
+				    	}else {
+				    		System.out.println("꼬부기는 기술머신 배우는것을 포기했다.");
+				    	
+				    	}
+				    
+				    }else if(answer5 ==4) {
+				    	System.out.println("풀베기  를 잊게할까?1.Yes 2. no ");
+				    	int answer6 =sc.nextInt();
+				    	if(answer6 ==1) {
+				    		System.out.println("...1.2...3..!꼬부기는 풀베기  를 완전히 잊었다!");
+				    		System.out.println("그리고 기술머신 32 참기를 배웠다!");
+				    	}else {
+				    		System.out.println("꼬부기는 기술머신 배우는것을 포기했다.");
+				    	
+				    	}
+				    
+				    }else if(answer5 ==5) {
+				    	System.out.println("꼬부기는 기술머신 배우는것을 포기했다.");
+				    }
+				    }if(answer4 ==4) {
+				    	System.out.println("꼬부기는 현재 4개의 기술을 알고있다.");
+				    	System.out.println("그러나 그중 하나를 잊어야한다. 어떤기술잊게 할까?");
+				    	System.out.println("1.할퀴기 2.울음소리 3. 물대포 4. 풀베기 5. 배우는것을 포기한다.");
+				    	int a  = sc.nextInt();
+				    	
+				     if(a==1) {
+				    	 System.out.println("할퀴기를 잊어버릴까? 1.yes 2. no");
+				    	 int b = sc.nextInt();
+				    	 if(b==1) {
+				    		 System.out.println("..1...2..3..!꼬부기는 할퀴기를 완전히 잊어버렸다.!");
+				    		 System.out.println("그리고 기술머신 30 플래시 를 배웠다!");
+				    		 
+				    	 }else {
+				    		 System.out.println("꼬부기는 기술머신배우는것을 포기했다.");
+				    		 
+				    	 }
+				    	 
+				     }	
+				     if(a==2) {
+				    	 System.out.println("울음소리를 잊어버릴까? 1.yes 2. no");
+				    	 int b = sc.nextInt();
+				    	 if(b==1) {
+				    		 System.out.println("..1...2..3..!꼬부기는 울음소리를 완전히 잊어버렸다.!");
+				    		 System.out.println("그리고 기술머신 30 플래시 를 배웠다!");
+				    		 
+				    	 }else {
+				    		 System.out.println("꼬부기는 기술머신배우는것을 포기했다.");
+				    		 
+				    	 }
+				    	 
+				     } if(a==3) {
+				    	 System.out.println("물대포를 잊어버릴까? 1.yes 2. no");
+				    	 int b = sc.nextInt();
+				    	 if(b==1) {
+				    		 System.out.println("..1...2..3..!꼬부기는 물대포를 완전히 잊어버렸다.!");
+				    		 System.out.println("그리고 기술머신 30 플래시 를 배웠다!");
+				    		 
+				    	 }else {
+				    		 System.out.println("꼬부기는 기술머신배우는것을 포기했다.");
+				    		 
+				    	 }
+				    	 
+				     } if(a==4) {
+				    	 System.out.println("풀베기 를 잊어버릴까? 1.yes 2. no");
+				    	 int b = sc.nextInt();
+				    	 if(b==1) {
+				    		 System.out.println("..1...2..3..!꼬부기는 풀베기 를 완전히 잊어버렸다.!");
+				    		 System.out.println("그리고 기술머신 30 플래시 를 배웠다!");
+				    		 
+				    	 }else {
+				    		 System.out.println("꼬부기는 기술머신배우는것을 포기했다.");
+				    		 
+				    	 }
+				    	 
+				     } if(a==5) {
+				    	 System.out.println("꼬부기는 기술머신 배우는것을 포기했다.");
+			
+				    	 
+				     }
+				    }
+				   
+			     
+				   
+				   
+				   
+				   
+				   
+				 }
+					  
+					  
+					   
+					   
+		  }else if(answer==3) {
+			 if(myCharacter>enemy) {
+				 System.out.println("무사히 도망쳤다.!");
+			 }else {
+				 System.out.println("도망칠수없다..!");
+			 }
+		  }
+	                
+		}
+			
+			  
+		  
+}
+		   
+	   
+		
+		
+		
