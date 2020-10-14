@@ -1,0 +1,64 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Fuck {
+
+	public static void main(String[] args) {
+		
+	    //카페 주문 관리 //
+		//1) 메뉴를 화면에 표시(메뉴는 배열에 저장해도된다. array list도 가능)
+		//2)메뉴번호를 입력하시오.출력 만약 0이면 종료.
+		//3) ex 카페라떼 4000 카푸치노 4천 아메리카노 3천 에스프레소 2500  
+		//4) 메뉴번호가 들어오면 수량을 입력하시오(1이상);
+		// --(2) ---(3)을반복 메뉴 번호가 0일때 까지 반복
+		// 0이되면 종료  메뉴이름 :x개
+		// 총액 ~~ 출력
+		//for  
+		
+		
+		//1)우선 메뉴를 배열로 만든다.//
+		
+		ArrayList menu = new ArrayList();
+		
+		//2)만든 메뉴 배열안에  값들을 넣어준다.//
+		 	menu.add("0.카페라떼");
+		 	menu.add("1.카푸치노 ");
+		 	menu.add("2.아메리카노");
+		 	menu.add("3.에스프레소");
+		 	
+		 // 그리고 각각의 상품 가격을 담을 배열을 만든다.//
+		 ArrayList <Integer> price = new <Integer> ArrayList();
+		  price.add(4000);
+		  price.add(4000);
+		  price.add(3000);
+		  price.add(2500);
+		 	
+	  //3)주문을 받을변수 //
+		  int order = 0 ;
+		  
+		 
+		
+		 
+		//4)주문을 받는다//
+		 System.out.print("메뉴를 선택해주세요.");
+		 System.out.println(menu);
+		 System.out.println("가격"+price);
+		 
+		 //5)스캐너로 값을 받는다.주문받기 //
+		 Scanner sc1 = new Scanner(System.in);
+		 int choice = sc1.nextInt();
+		 //6)저장받는 값을 배열로 저장한다.//
+		   order= choice;
+		  Scanner sc2 =new Scanner(System.in);
+		  System.out.println("수량을 선택해주세요.");
+		  int many = sc2.nextInt();
+		 
+		  //수량을 저장할 변수 //
+		  int many2 = many;
+		  
+		  System.out.println(menu.get(0)+":"+"수량" +many2+" "+(price.get(0))*many2);
+		  
+		  
+		 
+		 
+		
+		 
