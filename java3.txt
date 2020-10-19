@@ -1,0 +1,6 @@
+
+public class Sales extends Menu {
+	void setMenu() {
+		System.out.println(order);
+	}
+}

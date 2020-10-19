@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Cafe_M {
+
+	public static void main(String[] args) {
+		//Menu 클래스 //
+		Menu m1 = new Menu();
+		m1.showMenu();
+		m1.setMenu();
+		
+	 
+		Sales s1 =new Sales();
+		s1.setMenu();
+		//Order 클래스//
+       Order o1 = new Order();
+    
+        o1.showOrder();
+}
+}
