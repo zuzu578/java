@@ -1,59 +1,104 @@
-import java.util.Scanner;
-import java.util.ArrayList;
 
 public class testfor {
   
-	
 
 	public static void main(String[] args) {
-		//Sub 라는 클래스를인스터스화 한것임===>객체화 했다//
+		A b1 = new B();
+		b1.div();
+		b1.sum();
+		b1.sub();
+		Animal h1 = new Human();
+		Animal t1 = new Tiger();
+		Animal e1 = new Eagle();
+		h1.Running();
+		t1.Running();
+		e1.Running();
 		
-		Sub s1= new Sub();
-		//값을 전달하는 인자 //
-		s1.setOperands(10, 20);
-		//인스턴스화 한 클래스의 메소드를 호출//
+
 		
-	    s1.sum();
-	    s1.avg();
-	    s1.substract();
-		
+	}
 	
 	
 }
+abstract class Animal{
+  protected abstract void Running();
+	  
+}
+class Human extends Animal{
+	protected void Running() {
+		System.out.println("사람이 움직인다.");
+	}
+}
+class Tiger extends Animal{
+	protected void Running() {
+		System.out.println("호랑이가 움직인다.");
+	}
+}
+class Eagle extends Animal{
+	protected void Running() {
+		System.out.println("독수리가 움직인다.");
+	}
 }
 
-class Calculator{
-	//Global Scope(전역변수,멤버변수)//
-	//Caculator ==>부모 //
-	int left, right;
-	
-	void setOperands(int left, int right) {
-		//this==>Calculator 객체 자기 자신을 가리킨다//
-		//오른쪽에있는 left , right == > main메소드에서 전달해주는 인자 이다//
-		this.left=left;
-		this.right=right;
-		
-		
+class Animal1{
+	protected void move() {
+		System.out.println("동물이 움직인다.");
 	}
-	void sum() {
-		System.out.println(this.left+this.right);
-	}
-	void avg() {
-		System.out.println((this.left+this.right)/2);
-		
-	}
-	
-	
-	
 }
-class Sub extends Calculator{
-	//Sub ==> 자식 //
-	// subtract 의 left ==>부모의 this(Calculator)객체이다 //
-	void substract() {
-		System.out.println(this.left+this.right);
+class Human1 extends Animal1{
+	protected void move() {
+		System.out.println("사람이 두발로 걷는다.");
+	}
+}
+class Tiger1 extends Animal1{
+	protected void move() {
+		System.out.println("호랑이가 네발로 뛴다.");
+	}
+}
+class Eagle1 extends Animal1{
+	protected void move() {
+		System.out.println("독수리가 날아다닌다.");
+	}
+}
+
+
+abstract class A {
+	protected int k;
+	protected int l;
+	
+	A(){
+	 k = 40;
+	 l = 20;
+	 
+	}
+
+    protected abstract void div();
+    
+	protected void sum() {
+	  System.out.println(this.k+this.l);
+	}
+	protected void sub() {
+		System.out.println(this.k-this.l);
+	}
+}
+
+class B extends A{
+	int p ;
+	int q ;
+	
+	B(){
+		p = k;
+		q = l;
+	}
+	protected void div() {
+		System.out.println(p/q);
+	}
+	protected void sum() {
+		System.out.println(p+q);
+	}
+	protected void sub() {
+		System.out.println(p-q);
 	}
 	
-	
-	
-	
+  
 }
